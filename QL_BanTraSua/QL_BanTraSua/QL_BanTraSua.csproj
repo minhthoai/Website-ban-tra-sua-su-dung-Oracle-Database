@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7820B84C-7CD1-4CC4-B603-2824D2110EC9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QL_BanTraSua</RootNamespace>
+    <AssemblyName>QL_BanTraSua</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage, Version=4.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Oracle.DataAccess, Version=2.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64" />
+    <Reference Include="Oracle.ManagedDataAccess">
+      <HintPath>c:\program files (x86)\microsoft visual studio\2019\community\common7\ide\extensions\mb1caqb4.zzj\Assemblies\DataProviders\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.VsDevTools.EntityFramework.16.0, Version=6.122.19.32, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
+    <Reference Include="Oracle.Web, Version=2.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.Protocols" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms.Ribbon, Version=2.0.0.0, Culture=neutral, PublicKeyToken=928736e248aa81f9, processorArchitecture=MSIL">
+      <HintPath>..\packages\RibbonWinForms.5.0.1.1\lib\net472\System.Windows.Forms.Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form_ChonKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ChonKhachHang.Designer.cs">
+      <DependentUpon>Form_ChonKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ChonSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ChonSanPham.Designer.cs">
+      <DependentUpon>Form_ChonSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DangNhap.Designer.cs">
+      <DependentUpon>Form_DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DanhSachDonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DanhSachDonHang.Designer.cs">
+      <DependentUpon>Form_DanhSachDonHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DonHangDangGiao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DonHangDangGiao.Designer.cs">
+      <DependentUpon>Form_DonHangDangGiao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DonHangThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DonHangThanhToan.Designer.cs">
+      <DependentUpon>Form_DonHangThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_KhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_KhachHang.Designer.cs">
+      <DependentUpon>Form_KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_KhuVuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_KhuVuc.Designer.cs">
+      <DependentUpon>Form_KhuVuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_NhomTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_NhomTK.Designer.cs">
+      <DependentUpon>Form_NhomTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SanPham.Designer.cs">
+      <DependentUpon>Form_SanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SuaSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SuaSanPham.Designer.cs">
+      <DependentUpon>Form_SuaSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SuaTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SuaTaiKhoan.Designer.cs">
+      <DependentUpon>Form_SuaTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SuaTTKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SuaTTKhachHang.Designer.cs">
+      <DependentUpon>Form_SuaTTKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_TaoDonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_TaoDonHang.Designer.cs">
+      <DependentUpon>Form_TaoDonHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_TaoTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_TaoTaiKhoan.Designer.cs">
+      <DependentUpon>Form_TaoTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Tao_Sua_Xoa_NhomTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Tao_Sua_Xoa_NhomTK.Designer.cs">
+      <DependentUpon>Form_Tao_Sua_Xoa_NhomTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ThemKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ThemKhachHang.Designer.cs">
+      <DependentUpon>Form_ThemKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ThemSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ThemSanPham.Designer.cs">
+      <DependentUpon>Form_ThemSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ThongTinTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ThongTinTaiKhoan.Designer.cs">
+      <DependentUpon>Form_ThongTinTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_XacNhanDonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_XacNhanDonHang.Designer.cs">
+      <DependentUpon>Form_XacNhanDonHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_XoaDonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_XoaDonHang.Designer.cs">
+      <DependentUpon>Form_XoaDonHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_XoaKhachHang2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_XoaKhachHang2.Designer.cs">
+      <DependentUpon>Form_XoaKhachHang2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_XoaSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_XoaSanPham.Designer.cs">
+      <DependentUpon>Form_XoaSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_XoaTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_XoaTaiKhoan.Designer.cs">
+      <DependentUpon>Form_XoaTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainApp.Designer.cs">
+      <DependentUpon>MainApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_ChonKhachHang.resx">
+      <DependentUpon>Form_ChonKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ChonSanPham.resx">
+      <DependentUpon>Form_ChonSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DangNhap.resx">
+      <DependentUpon>Form_DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DanhSachDonHang.resx">
+      <DependentUpon>Form_DanhSachDonHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DonHangDangGiao.resx">
+      <DependentUpon>Form_DonHangDangGiao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DonHangThanhToan.resx">
+      <DependentUpon>Form_DonHangThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_KhachHang.resx">
+      <DependentUpon>Form_KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_KhuVuc.resx">
+      <DependentUpon>Form_KhuVuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_NhomTK.resx">
+      <DependentUpon>Form_NhomTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SanPham.resx">
+      <DependentUpon>Form_SanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SuaSanPham.resx">
+      <DependentUpon>Form_SuaSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SuaTaiKhoan.resx">
+      <DependentUpon>Form_SuaTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SuaTTKhachHang.resx">
+      <DependentUpon>Form_SuaTTKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_TaoDonHang.resx">
+      <DependentUpon>Form_TaoDonHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_TaoTaiKhoan.resx">
+      <DependentUpon>Form_TaoTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Tao_Sua_Xoa_NhomTK.resx">
+      <DependentUpon>Form_Tao_Sua_Xoa_NhomTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ThemKhachHang.resx">
+      <DependentUpon>Form_ThemKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ThemSanPham.resx">
+      <DependentUpon>Form_ThemSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ThongTinTaiKhoan.resx">
+      <DependentUpon>Form_ThongTinTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_XacNhanDonHang.resx">
+      <DependentUpon>Form_XacNhanDonHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_XoaDonHang.resx">
+      <DependentUpon>Form_XoaDonHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_XoaKhachHang2.resx">
+      <DependentUpon>Form_XoaKhachHang2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_XoaSanPham.resx">
+      <DependentUpon>Form_XoaSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_XoaTaiKhoan.resx">
+      <DependentUpon>Form_XoaTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainApp.resx">
+      <DependentUpon>MainApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foody-upload-api-foody-mobile-img_3070-191003093027.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\br_01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\br_03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\br_04.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cach-ban-hang-online-hieu-qua-nhat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_22230208_22x22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1176255622x22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1235527622x22.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>

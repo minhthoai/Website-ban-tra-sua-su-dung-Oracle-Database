@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="MilkteaOracle">
+    <EntitySetMapping Name="BAIVIETs">
+      <EntityTypeMapping TypeName="Model.BAIVIET">
+        <MappingFragment StoreEntitySet="BAIVIET">
+          <ScalarProperty Name="MABV" ColumnName="MABV" />
+          <ScalarProperty Name="TENBV" ColumnName="TENBV" />
+          <ScalarProperty Name="HINHDD" ColumnName="HINHDD" />
+          <ScalarProperty Name="NGAYDANG" ColumnName="NGAYDANG" />
+          <ScalarProperty Name="MALOAI" ColumnName="MALOAI" />
+          <ScalarProperty Name="NOIDUNG" ColumnName="NOIDUNG" />
+          <ScalarProperty Name="TAIKHOAN" ColumnName="TAIKHOAN" />
+          <ScalarProperty Name="DADUYET" ColumnName="DADUYET" />
+          <ScalarProperty Name="MANV" ColumnName="MANV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CTDONHANGs">
+      <EntityTypeMapping TypeName="Model.CTDONHANG">
+        <MappingFragment StoreEntitySet="CTDONHANG">
+          <ScalarProperty Name="MADH" ColumnName="MADH" />
+          <ScalarProperty Name="MASP" ColumnName="MASP" />
+          <ScalarProperty Name="SOLUONG" ColumnName="SOLUONG" />
+          <ScalarProperty Name="GIABAN" ColumnName="GIABAN" />
+          <ScalarProperty Name="GIAMGIA" ColumnName="GIAMGIA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DONHANGs">
+      <EntityTypeMapping TypeName="Model.DONHANG">
+        <MappingFragment StoreEntitySet="DONHANG">
+          <ScalarProperty Name="MADH" ColumnName="MADH" />
+          <ScalarProperty Name="MAKH" ColumnName="MAKH" />
+          <ScalarProperty Name="MANV" ColumnName="MANV" />
+          <ScalarProperty Name="TAIKHOAN" ColumnName="TAIKHOAN" />
+          <ScalarProperty Name="NGAYDAT" ColumnName="NGAYDAT" />
+          <ScalarProperty Name="DAKICHHOAT" ColumnName="DAKICHHOAT" />
+          <ScalarProperty Name="NGAYGH" ColumnName="NGAYGH" />
+          <ScalarProperty Name="DIACHIGH" ColumnName="DIACHIGH" />
+          <ScalarProperty Name="GHICHU" ColumnName="GHICHU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KHACHHANGs">
+      <EntityTypeMapping TypeName="Model.KHACHHANG">
+        <MappingFragment StoreEntitySet="KHACHHANG">
+          <ScalarProperty Name="MAKH" ColumnName="MAKH" />
+          <ScalarProperty Name="TENKH" ColumnName="TENKH" />
+          <ScalarProperty Name="SODT" ColumnName="SODT" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="MAQH" ColumnName="MAQH" />
+          <ScalarProperty Name="NGAYSINH" ColumnName="NGAYSINH" />
+          <ScalarProperty Name="GIOITINH" ColumnName="GIOITINH" />
+          <ScalarProperty Name="GHICHU" ColumnName="GHICHU" />
+          <ScalarProperty Name="DIEMTICHLUY" ColumnName="DIEMTICHLUY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOAISPs">
+      <EntityTypeMapping TypeName="Model.LOAISP">
+        <MappingFragment StoreEntitySet="LOAISP">
+          <ScalarProperty Name="MALOAI" ColumnName="MALOAI" />
+          <ScalarProperty Name="LOAISP1" ColumnName="LOAISP" />
+          <ScalarProperty Name="GHICHU" ColumnName="GHICHU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NHANVIENs">
+      <EntityTypeMapping TypeName="Model.NHANVIEN">
+        <MappingFragment StoreEntitySet="NHANVIEN">
+          <ScalarProperty Name="MANV" ColumnName="MANV" />
+          <ScalarProperty Name="HOTEN" ColumnName="HOTEN" />
+          <ScalarProperty Name="NGAYSINH" ColumnName="NGAYSINH" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="NGAYNHANVIEC" ColumnName="NGAYNHANVIEC" />
+          <ScalarProperty Name="DIACHINV" ColumnName="DIACHINV" />
+          <ScalarProperty Name="CONGVIEC" ColumnName="CONGVIEC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NHOMTKs">
+      <EntityTypeMapping TypeName="Model.NHOMTK">
+        <MappingFragment StoreEntitySet="NHOMTK">
+          <ScalarProperty Name="MANHOM" ColumnName="MANHOM" />
+          <ScalarProperty Name="TENNHOM" ColumnName="TENNHOM" />
+          <ScalarProperty Name="GHICHU" ColumnName="GHICHU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QUANHUYENs">
+      <EntityTypeMapping TypeName="Model.QUANHUYEN">
+        <MappingFragment StoreEntitySet="QUANHUYEN">
+          <ScalarProperty Name="MAQH" ColumnName="MAQH" />
+          <ScalarProperty Name="TENQH" ColumnName="TENQH" />
+          <ScalarProperty Name="TINHTHANH" ColumnName="TINHTHANH" />
+          <ScalarProperty Name="GHICHU" ColumnName="GHICHU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SANPHAMs">
+      <EntityTypeMapping TypeName="Model.SANPHAM">
+        <MappingFragment StoreEntitySet="SANPHAM">
+          <ScalarProperty Name="MASP" ColumnName="MASP" />
+          <ScalarProperty Name="TENSP" ColumnName="TENSP" />
+          <ScalarProperty Name="MALOAI" ColumnName="MALOAI" />
+          <ScalarProperty Name="HINHDD" ColumnName="HINHDD" />
+          <ScalarProperty Name="NDTOMTAT" ColumnName="NDTOMTAT" />
+          <ScalarProperty Name="NGAYDANG" ColumnName="NGAYDANG" />
+          <ScalarProperty Name="LOAIHANG" ColumnName="LOAIHANG" />
+          <ScalarProperty Name="TAIKHOAN" ColumnName="TAIKHOAN" />
+          <ScalarProperty Name="DADUYET" ColumnName="DADUYET" />
+          <ScalarProperty Name="MANV" ColumnName="MANV" />
+          <ScalarProperty Name="GIABAN" ColumnName="GIABAN" />
+          <ScalarProperty Name="GIAMGIA" ColumnName="GIAMGIA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAIKHOANTVs">
+      <EntityTypeMapping TypeName="Model.TAIKHOANTV">
+        <MappingFragment StoreEntitySet="TAIKHOANTV">
+          <ScalarProperty Name="TAIKHOAN" ColumnName="TAIKHOAN" />
+          <ScalarProperty Name="MATKHAU" ColumnName="MATKHAU" />
+          <ScalarProperty Name="MANHOM" ColumnName="MANHOM" />
+          <ScalarProperty Name="HODEM" ColumnName="HODEM" />
+          <ScalarProperty Name="TENTV" ColumnName="TENTV" />
+          <ScalarProperty Name="NGAYSINH" ColumnName="NGAYSINH" />
+          <ScalarProperty Name="GIOITINH" ColumnName="GIOITINH" />
+          <ScalarProperty Name="SODT" ColumnName="SODT" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+          <ScalarProperty Name="MAQH" ColumnName="MAQH" />
+          <ScalarProperty Name="TRANGTHAI" ColumnName="TRANGTHAI" />
+          <ScalarProperty Name="GHICHU" ColumnName="GHICHU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="CAPNHAT_KHACHHANG" FunctionName="Model.Store.CAPNHAT_KHACHHANG" />
+    <FunctionImportMapping FunctionImportName="CAPNHAT_SANPHAM" FunctionName="Model.Store.CAPNHAT_SANPHAM" />
+    <FunctionImportMapping FunctionImportName="DOI_MATKHAU" FunctionName="Model.Store.DOI_MATKHAU" />
+    <FunctionImportMapping FunctionImportName="TAO_KHACHHANG" FunctionName="Model.Store.TAO_KHACHHANG" />
+    <FunctionImportMapping FunctionImportName="TAO_LOAISP" FunctionName="Model.Store.TAO_LOAISP" />
+    <FunctionImportMapping FunctionImportName="TAO_NHOMTK" FunctionName="Model.Store.TAO_NHOMTK" />
+    <FunctionImportMapping FunctionImportName="TAO_QUANHUYEN" FunctionName="Model.Store.TAO_QUANHUYEN" />
+    <FunctionImportMapping FunctionImportName="TAO_SANPHAM" FunctionName="Model.Store.TAO_SANPHAM" />
+    <FunctionImportMapping FunctionImportName="TAO_TAIKHOANTV" FunctionName="Model.Store.TAO_TAIKHOANTV" />
+  </EntityContainerMapping>
+</Mapping>
